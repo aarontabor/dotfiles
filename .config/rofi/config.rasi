@@ -1,0 +1,4 @@
+configuration {
+	theme: "android_notification";
+	font: "Cascadia Code 24";
+}
