@@ -44,5 +44,8 @@ precmd () { __git_ps1 "%B%F{blue}%c%f " ":%b " "(%s) " }
 # enable full-color support
 TERM=xterm-256color
 
-# use the real vim
-export EDITOR=nvim
+# set default editor
+export EDITOR=vim
+
+# load personal settings from ~/.config/zsh/
+source ~/.config/zsh/aliases.sh
