@@ -1,0 +1,29 @@
+[user]
+	name = Aaron Tabor
+	email = aarontabor50@gmail.com
+[init]
+	defaultBranck = master
+[color]
+	ui = auto
+	diff = auto
+[alias]
+	a = add
+	aa = add --all
+	ci = commit
+	co = checkout
+	d = diff
+	dc = diff --cached
+	l = log --oneline
+	ll = log
+	lg = log --graph --oneline
+	la = log --graph --oneline --all
+	s = status
+[core]
+	autocrlf = input
+	precomposeunicode = true
+	editor = nvim
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
