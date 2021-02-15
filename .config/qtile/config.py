@@ -41,6 +41,11 @@ keys = [
 
     # Launch Rofi
     Key([mod], "space", lazy.spawn("rofi -show drun"), desc="Launch an Application"),
+
+    # Volume Hotkeys
+    Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle"), desc="Toggle Audio"),
+    Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 1%- unmute"), desc="Decrease Audio"),
+    Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 1%+ unmute"), desc="Increase Audio"),
 ]
 
 
