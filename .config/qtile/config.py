@@ -21,8 +21,8 @@ keys = [
     Key([mod, "shift"], "j", lazy.layout.shuffle_up(), desc="Move window up in current stack "),
 
     # Resize windows in Mondad-* views
-    Key([mod], "equal", lazy.layout.grow(), desc="Increase size of master window"),
-    Key([mod], "minus", lazy.layout.shrink(), desc="Decrease size of master window"),
+    Key([mod], "equal", lazy.layout.grow_main(), desc="Increase size of master window"),
+    Key([mod], "minus", lazy.layout.shrink_main(), desc="Decrease size of master window"),
 
     # Moving between (Physical) Screens
     Key([mod], "h", lazy.to_screen(0), desc="Move to Left Screen"),
