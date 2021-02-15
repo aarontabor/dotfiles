@@ -24,6 +24,9 @@ keys = [
     Key([mod], "equal", lazy.layout.grow_main(), desc="Increase size of master window"),
     Key([mod], "minus", lazy.layout.shrink_main(), desc="Decrease size of master window"),
 
+    # Swap current window with master in Monad views
+    Key([mod], "Return", lazy.layout.swap_main(), desc="Swap current window with master"),
+
     # Moving between (Physical) Screens
     Key([mod], "h", lazy.to_screen(0), desc="Move to Left Screen"),
     Key([mod], "l", lazy.to_screen(1), desc="Move to Right Screen"),
@@ -33,7 +36,6 @@ keys = [
     Key([alt], "Tab", lazy.group.next_window(), lazy.window.bring_to_front(), desc="Alt-tab btwn Windows"),
 
     # Qtile System Commands
-    Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.restart(), desc="Restart qtile"),
