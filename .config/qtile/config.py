@@ -27,6 +27,10 @@ keys = [
     # Swap current window with master in Monad views
     Key([mod], "Return", lazy.layout.swap_main(), desc="Swap current window with master"),
 
+    # Flip master region in Monad views (e.g., from left to right)
+    Key([mod, "shift"], "Return", lazy.layout.flip(), desc="Flip the master region"),
+
+
     # Moving between (Physical) Screens
     Key([mod], "h", lazy.to_screen(0), desc="Move to Left Screen"),
     Key([mod], "l", lazy.to_screen(1), desc="Move to Right Screen"),
