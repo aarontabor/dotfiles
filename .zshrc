@@ -7,6 +7,9 @@ export PATH=~/bin:$PATH
 # use emacs keybindings 
 bindkey -e
 
+# disabe <ctrl-s> "screen-locking" functionality
+stty -ixon
+
 # enable ctrl-x-e to edit current command in $EDITOR
 autoload -U edit-command-line
 zle -N edit-command-line
