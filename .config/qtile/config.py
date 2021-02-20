@@ -23,6 +23,7 @@ keys = [
     # Resize windows in Mondad-* views
     Key([mod], "equal", lazy.layout.grow_main(), desc="Increase size of master window"),
     Key([mod], "minus", lazy.layout.shrink_main(), desc="Decrease size of master window"),
+    Key([mod], "0", lazy.layout.normalize(), desc="Reset secondary window sizes"),
 
     # Swap current window with master in Monad views
     Key([mod], "Return", lazy.layout.swap_main(), desc="Swap current window with master"),
@@ -55,7 +56,7 @@ keys = [
 ]
 
 
-groups = [Group(i) for i in "1234567890"]
+groups = [Group(i) for i in "123456789"]
 
 for i in groups:
     keys.extend([
