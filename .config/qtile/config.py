@@ -21,8 +21,10 @@ keys = [
     Key([mod, "shift"], "j", lazy.layout.shuffle_up(), desc="Move window up in current stack "),
 
     # Resize windows in Mondad-* views
-    Key([mod], "equal", lazy.layout.grow_main(), desc="Increase size of master window"),
-    Key([mod], "minus", lazy.layout.shrink_main(), desc="Decrease size of master window"),
+    Key([mod], "equal", lazy.layout.grow(), desc="Increase size of current window"),
+    Key([mod], "minus", lazy.layout.shrink(), desc="Decrease size of current window"),
+    Key([mod, "shift"], "equal", lazy.layout.grow_main(), desc="Increase size of master window"),
+    Key([mod, "shift"], "minus", lazy.layout.shrink_main(), desc="Decrease size of master window"),
     Key([mod], "0", lazy.layout.normalize(), desc="Reset secondary window sizes"),
 
     # Swap current window with master in Monad views
