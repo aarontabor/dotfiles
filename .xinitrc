@@ -34,4 +34,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 xrandr --output DisplayPort-1 --auto --rotate left --pos 0x0 --output DisplayPort-2 --auto --rotate right --right-of DisplayPort-1
+
+picom &
 exec qtile
