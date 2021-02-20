@@ -71,10 +71,8 @@ for i in groups:
 
 
 layout_theme = {
-        'border_focus':"#ffff00",
-        'border_normal':"#000000",
-        'border_width':1,
-        'margin': 20,
+        'border_width':0,
+        'margin': 15,
         'fullscreen_border_width':0,
     }
 
