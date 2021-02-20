@@ -29,13 +29,20 @@ zstyle ":completion:*" menu select
 setopt CORRECT_ALL
 
 # configure history settings
+## save 10,000 history items, shared across all terminal sessions
 HISTFILE=~/.zsh/history
-HISTSIZE=100000
-SAVEHIST=100000
-HISTDUP=erase
+HISTSIZE=10000
+SAVEHIST=10000
 setopt sharehistory
 setopt appendhistory
-setopt incappendhistory
+
+## Do not add duplicates to the history list (i.e., the shell's local memory)
+## All whitespace differences are ignored
+setopt histignorealldups
+setopt histreduceblanks
+
+## Do not save duplicates in the history file (i.e., the global file shared across all sessions)
+setopt histsavenodups
 
 # configure git-prompt widget
 source /usr/share/git/completion/git-prompt.sh
