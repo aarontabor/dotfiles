@@ -12,6 +12,9 @@ set expandtab
 set linebreak
 set breakindent
 
+" Define a standard textwidth to enable `gq` to format paragraph text
+set textwidth=120
+
 " Use comma as the main leader key
 let mapleader = ","
 
