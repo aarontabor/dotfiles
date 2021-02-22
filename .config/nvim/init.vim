@@ -43,3 +43,5 @@ nmap <right> :cnewer<cr>
 nmap <up> :cprevious<cr>
 nmap <down> :cnext<cr>
 
+" Use <leader>s to toggle spell checking
+nmap <leader>s :set spell!<cr>
