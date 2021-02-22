@@ -19,6 +19,12 @@ set textwidth=120
 set cursorline
 highlight CursorLine cterm=bold ctermbg=darkgrey
 
+" Use a less obnoxious search highlight color
+highlight search cterm=bold ctermbg=lightyellow
+
+" Disable todo highlighting
+highlight todo NONE
+
 " Use comma as the main leader key
 let mapleader = ","
 
