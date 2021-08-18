@@ -2,7 +2,7 @@
 	name = Aaron Tabor
 	email = aarontabor50@gmail.com
 [init]
-	defaultBranck = master
+	defaultBranch = master
 [color]
 	ui = auto
 	diff = auto
