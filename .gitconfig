@@ -9,14 +9,18 @@
 [alias]
 	a = add
 	aa = add --all
+	b = branch
+	ba = branch --all
 	ci = commit
 	co = checkout
 	d = diff
 	dc = diff --cached
 	l = log --oneline
+	la = log --oneline --all
 	ll = log
+	lla = log --all
 	lg = log --graph --oneline
-	la = log --graph --oneline --all
+	lga = log --graph --oneline --all
 	s = status
 [core]
 	autocrlf = input
