@@ -33,7 +33,7 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xrandr --output DisplayPort-1 --auto --rotate left --pos 0x0 --output DisplayPort-2 --auto --rotate right --right-of DisplayPort-1
+xrandr --output HDMI-A-0 --primary --auto --output DisplayPort-0 --auto --right-of HDMI-A-0 --rotate left --output DisplayPort-1 --auto --left-of HDMI-A-0 --rotate right
 
 picom &
 exec qtile
