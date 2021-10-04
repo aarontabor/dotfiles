@@ -45,7 +45,7 @@ setopt histreduceblanks
 setopt histsavenodups
 
 # configure git-prompt widget
-source /usr/share/git/completion/git-prompt.sh
+source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE="true"
 GIT_PS1_SHOWUNTRACKEDFILES="true"
 GIT_PS1_SHOWCOLORHINTS="true"
